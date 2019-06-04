@@ -1,15 +1,15 @@
 1、图片的居中：在img标签的父元素的div中的css:display: flex; justify-content: center;align-items: center;
 2、给中文加拼音的标签：<ruby>今 天<rp>(</rp><rt>jin tian</rt><rp>)</rp></ruby>
 
-一、rel=”alternate”;（<a>、<area>、<link>元素上）
+一、rel=”alternate”;（a、area、link标签上）
 	1、 表示链接有替换内容（可实现换肤效果）
 	2、 还可以用来定义用来替换的页面
 	eg:media响应处理，小于640像素时候，告诉用户或者设备（或搜索引擎），还有移动站页面
-	<link rel="alternate" media="only screen and (max-width: 640px)" href="https://m.zhangxinxu.com/" />
+	<link rel="alternate" media="only screen and (max-width: 640px)" href="css页面" />
 	
 	二、rel=”dns-prefetch”只能作用在<link>元素上，作用是DNS预读取，可以提高页面资源加载速度
 	
-	三、rel=”help”;提示进行帮助说明（<a>、<area>、<form>或<link>）
+	三、rel=”help”;提示进行帮助说明（a、area、form或link标签上）
 	eg:CSS转义<a href="" title="这个用在什么地方？" rel="help">鼠标移上提示tile的内容</a>
 	
 	四、rel=”icon”（link允许）
