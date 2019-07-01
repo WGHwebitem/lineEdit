@@ -32,4 +32,13 @@
 	
 	十二、rel=”tag”（表示指向表述当前文档标签的链接）因此SEO会更加精准，质量更高。
 	
-
+	十三、座机和电话号码的验证
+        function checkTel(tel)
+	{
+	   var mobile = /^1[3|5|8]\d{9}$/;
+	   var phone = /^0\d{2,3}-?\d{7,8}$/;
+	   return mobile.test(tel) || phone.test(tel);
+	}
+	alert(checkTel（'15990874321'）);  //ture
+        alert(checkTel('020-12345678'));  //true
+        alert(checkTel('12345985'));    //false
